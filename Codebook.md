@@ -1,10 +1,8 @@
 # Codebook
 This dataset was created from a copy of the Human Activity Recognition Using Smartpones Data Set[[1](#raw-data)]. 
 
-From the original README.txt:
-"The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+The raw data was combined into one data set, labels and feature names modified. The data was finally grouped by subject and activity and variables measuring the Mean and Standard Deviation were summarized. 
 
-The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. "
 
 ## Data Transformations
 The raw data was combined with new values and column names. The description of the changes is listed below. 
@@ -100,6 +98,15 @@ Sixty-six features that were either the Mean or Standard Deviation were taken fr
 66. fBodyBodyGyroMagstd
 67. fBodyBodyGyroJerkMagmean
 68. fBodyBodyGyroJerkMagstd
+
+
+### Original Columns 
+
+The extracted columns correlate to the following original data columns (before adding subject and activity - please refer to the raw data):
+
+1, 2, 3, 4, 5, 6, 41, 42, 43, 44, 45, 46, 81, 82, 83, 84, 85, 86, 121, 122, 123, 124, 125, 126, 161, 162, 163, 164, 165, 166, 201, 202, 214, 215, 227, 228, 240, 241, 253, 254, 266, 267, 268, 269, 270, 271, 345, 346, 347,  348, 349, 350, 424, 
+425, 426, 427, 428, 429, 503, 504, 516 ,517 529, 530, 542, 543
+
 
 References
 ----------
